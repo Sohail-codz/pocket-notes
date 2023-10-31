@@ -1,9 +1,10 @@
 import './App.css';
+import PcView from './view/pcView/PcView';
 
 function App() {
   return (
     <div className="App">
-    <h1>hello guys</h1>
+    <PcView/>
     </div>
   );
 }
