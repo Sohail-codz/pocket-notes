@@ -1,0 +1,77 @@
+.notes-container {
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.notes-title{
+    height: 13vh;
+    width: 70vw;
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 5vh;
+}
+  
+.notes-title-color{
+    height: 9vh;
+    width: 9vh;
+    border-radius: 50%;
+    margin: 1vh 0 0 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4vh;
+}
+  
+.notes-title-text{
+    margin-left: 4vh;
+}
+  
+.notes-content{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 57vh;
+    width: 70vw;
+    background-color:  #f7ecdc;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+::-webkit-scrollbar {
+    display: none; 
+}
+  
+.notes-input-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 70vw;
+    background-color: #e8e8e8;
+    position: fixed;
+    bottom: 0;
+}
+  
+.notes-input-area> textarea {
+    border: 1px solid grey;
+    outline: none;
+    border-radius: 1vh;
+    font-size: large;
+    padding: 1vh;
+    height: 23vh;
+    width: 67vw;
+    resize: none;
+}
+  
+.notes-input-area>img {
+    position: absolute;
+    bottom: 7vh;
+    right: 10vh;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}

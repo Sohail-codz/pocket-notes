@@ -1,0 +1,32 @@
+.group-logo-title{
+    margin: 1vw 0 1vw 0.5vw;
+    border-radius: 4vh 0 0 4vh;
+    height: 9vh;
+    width: 30vw;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    gap: 3vw;
+    align-items: center;
+    padding-left: 1.5vw;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.logo-title{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5vh;
+    font-weight: 500;
+    color: white;
+}
+.highlighted-title{
+    height: 12vh;
+    width: 100%;
+    background-color: #f7ecdc;
+    color: black;
+}

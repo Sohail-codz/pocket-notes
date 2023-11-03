@@ -1,0 +1,46 @@
+.pc-notes-content-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw;
+    align-items: center;
+    min-height: 15vh;
+    height: auto;
+    width: 70vw;
+    background-color: #F7ECDC;
+}
+
+.notes-time-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 15vh;
+    width: 15vw;
+    background-color: #F7ECDC;
+}
+
+.note-date{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1vh;
+}
+
+.note-time{
+    margin: 0 1vh 0 1vh;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.notes-content-details{
+    min-height: 15vh;
+    height: auto;
+    width: 70vw;
+    text-align: left;
+    margin: 2vh 4vw 0 0;
+    overflow-y: scroll;
+}
+.note-content{
+    width: 50vw;
+    height: auto;
+}
+
