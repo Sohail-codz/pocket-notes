@@ -6,8 +6,8 @@ function NotesContentPc({note}){
     return(
         <div className='pc-notes-content-container'>
             <div className='notes-time-details'>
-                <p className='note-date'>{note.date}</p>
                 <p className='note-time'>{note.time}</p>
+                <p className='note-date'>{note.date}</p>    
             </div>
             <div className='notes-content-details'>
                 <p className='note-content'>{note.content}</p>

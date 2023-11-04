@@ -35,6 +35,7 @@
 .notes-content{
     overflow-y: scroll;
     overflow-x: hidden;
+    font-weight: 500;
     height: 57vh;
     width: 70vw;
     background-color:  #f7ecdc;
