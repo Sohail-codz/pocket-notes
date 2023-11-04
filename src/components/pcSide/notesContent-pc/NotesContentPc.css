@@ -25,12 +25,14 @@
     font-size: 1rem;
     font-weight: 600;
     margin: 1vh;
+    color: rgb(115, 108, 99);
 }
 
 .note-time{
     margin: 0 1vh 0 1vh;
     font-size: 1rem;
     font-weight: 600;
+    color: rgb(115, 108, 99);
 }
 
 .notes-content-details{
