@@ -107,7 +107,7 @@ function NotesPc({notes, setNotes, selected, setSelected}){
                 )):null}
             </div>
             <div className='notes-input-area'>
-                <textarea value={text} placeholder='Enter your notes here' 
+                <textarea id='note-texts' value={text} placeholder='Enter your notes here' 
                 onChange={(e)=>{
                     setText(e.target.value);
                 }}
