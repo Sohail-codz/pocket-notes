@@ -14,7 +14,7 @@ function PopupPc({
         setBgroundColor(getComputedStyle(div).backgroundColor);
     };
 
-    const saveName=()=>{  
+    const svName=()=>{  
         const newGroup = {name: groupName, color: bgroundColor};
         setGroupNamesParent([...groupNamesParent, newGroup]);
         localStorage.setItem(
@@ -64,7 +64,7 @@ function PopupPc({
             </div>
         </div>
         <div className='create-btn'>
-                <button onClick={saveName} disabled={groupName.length===0 || bgroundColor==='' }>Create</button>
+                <button onClick={svName} disabled={groupName.length===0 || bgroundColor==='' }>Create</button>
         </div>
       </div> 
     )
