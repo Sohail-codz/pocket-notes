@@ -1,0 +1,59 @@
+.mob-notespage-container{
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    font-family: 'Roboto', sans-serif;
+}
+.mob-notespage-title-area{
+    display: flex;
+    height: 11vh;
+    align-items: center;
+}
+.mob-notespage-title-area>img{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.mob-notespage-title-color{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.mob-notespage-content-area{
+    height: 65vh;
+    width: 100%;
+    overflow-y: scroll;
+    background-color: #F7ECDC;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.mob-notespage-input-area{
+    height: 23vh;
+}
+.mob-notespage-input-area>textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+.mob-notespage-input-area>img{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+}
+
+.mob-notespage-title{
+    font-size: 26px;
+    margin-left: 5vw;
+}

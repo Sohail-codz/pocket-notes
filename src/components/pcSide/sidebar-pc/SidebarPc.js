@@ -6,7 +6,7 @@ import NotesHeaderPc from '../notesHeader-pc/NotesHeaderPc';
 
 function SidebarPc({selected, setSelected}){
     const[titles, setTitles]=useState([]);
-    const[groupNamesParent, setGroupNamesParent]=useState(
+    const[gNamesHead, setGNamesHead]=useState(
         localStorage.getItem('groupNames') || []
     );
     const[showPopup, setShowPopup]=useState(false);
@@ -15,18 +15,18 @@ function SidebarPc({selected, setSelected}){
     useEffect((e)=>{
         const data = localStorage.getItem('groupNames')
         if(data){
-            setGroupNamesParent(JSON.parse(data));
+            setGNamesHead(JSON.parse(data));
         }else{
-            setGroupNamesParent([]);
+            setGNamesHead([]);
         }
     },[]);
     useEffect(()=>{
-        if(groupNamesParent.length>0){
+        if(gNamesHead.length>0){
             const obj = JSON.parse(localStorage.getItem('groupNames'));
             const result = Object.keys(obj).map((key)=>[obj[key]]);
             setTitles(result);
         }
-    }, [groupNamesParent]);
+    }, [gNamesHead]);
 
     const handleClick=()=> {
         setShowPopup(!showPopup);
@@ -64,12 +64,12 @@ function SidebarPc({selected, setSelected}){
                 title={title}
                 />
             ))}
-                </div>
+            </div>
             {showPopup &&(
                 <div className='popup-pc-container' ref={popupRef}>
                 <PopupPc
-                groupNamesParent={groupNamesParent}
-                setGroupNamesParent={setGroupNamesParent}
+                gNamesHead={gNamesHead}
+                setGNamesHead={setGNamesHead}
                 onClose={handleClose}/>
             </div>)}
         </div>

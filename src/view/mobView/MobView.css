@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&family=Roboto:wght@500&display=swap');
+
+.home-mob-container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    font-family:'Roboto', sans-serif;
+}
+.home-mob-heading{
+    font-size: 11vw;
+    padding: 1rem;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.mob-btn-container{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+.mob-btn-container>button{
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    width: 80vw;
+    justify-content: center;
+    border: none;
+    border-radius: 3rem;
+    color: white;
+    background-color: black;
+    gap: 0.5rem;
+    font-size: 5vw;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+.mob-btn-container .adder{
+    font-size: 7vw;
+}
+.mob-btn-container:hover{
+    transform: translateY(-1.5px); 
+    transition: all 100ms;
+}
+
+.popup-mob-container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(39, 39, 39, 0.621);
+    z-index: 10;
+}

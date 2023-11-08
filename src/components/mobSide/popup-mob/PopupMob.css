@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&family=Roboto:wght@500&display=swap');
 
-.popup-container{
+.mob-popup-container{
     font-family:'Roboto', sans-serif;
     height: 15rem;
-    width: 32rem;
+    width: 75vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -17,71 +16,71 @@
     border-radius: 7px;
     padding: 20px;
 }
-.popup-heading{
-    margin-left: -180px;
-    margin-top: -10px;
-    font-size: 15px;
-    letter-spacing: 1px;
+.mob-popup-heading{
+    font-size: 3.5vw;
+    font-weight: 100;
 }
-.name-input-area{
+.mob-name-input-area{
     display: flex;
-    width: 430px;
-    font-size: 22px;
+    width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
-.name-input-area>input{
+.mob-name-input-area>input{
     border-style: solid;
-    width: 250px;
-    margin-left: 25px;
+    width: 60%;
+    height: 30px;
     font-size: 15px;
-    padding: 7px;
+    padding: 9px;
     border-color: #CCCCCC;
-    border-radius: 20px;
+    border-radius: 13px;
 }
-.name-input-area>input::placeholder{
+.mob-name-input-area>input::placeholder{
+    font-size: 11px;
     color: #CCCCCC;
-}
+} 
 
-.color-input-area{
+.mob-color-input-area{
     display: flex;
-    width: 430px;
-    font-size: 22px;
+    width: 100%;
     justify-content: space-between;
 }
-.color-container{
+.mob-color-container{
+    margin-right: 20px;
     display: flex;
-    margin-right: 40px;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 2.3vw;
+    align-items: center;
 }
-.color-input-1,
-.color-input-2,
-.color-input-3,
-.color-input-4,
-.color-input-5,
-.color-input-6{
-    width: 25px;
-    height: 25px;
+.mob-color-input-1,
+.mob-color-input-2,
+.mob-color-input-3,
+.mob-color-input-4,
+.mob-color-input-5,
+.mob-color-input-6{
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     border: none;
     cursor: pointer;
     background-color: black;
 }
-.color-input-1{
+.mob-color-input-1{
     background-color: #B38BFA;
 }
-.color-input-2{
+.mob-color-input-2{
     background-color: #FF79F2;
 }
-.color-input-3{
+.mob-color-input-3{
     background-color: #43E6FC;
 }
-.color-input-4{
+.mob-color-input-4{
     background-color: #F19576;
 }
-.color-input-5{
+.mob-color-input-5{
     background-color: #0047FF;
 }
-.color-input-6{
+.mob-color-input-6{
     background-color: #6691FF;
 }
 .highlight{
@@ -89,7 +88,7 @@
     border-radius: 50px;
 }
 
-.create-btn>button{
+.mob-create-btn>button{
     background-color: black;
     color: white;
     border-style: solid;
@@ -101,11 +100,11 @@
     border-radius: 7px;
     cursor: pointer;
 }
-.create-btn>button:hover{
+.mob-create-btn>button:hover{
     background-color: rgb(166, 166, 166);
     color: black;
 }
-.close-btn{
+.mob-close-btn{
     position: absolute;
     top: 5%;
     right: 4%;

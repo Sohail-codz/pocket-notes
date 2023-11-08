@@ -46,15 +46,7 @@ function NotesPc({notes, setNotes, selected, setSelected}){
             );
         }
     },[selected, setNotes])
-
-    // const formatDate = (dateStr) => {
-    //     const options = {
-    //       day: 'numeric',
-    //       month: 'long',
-    //       year: 'numeric',
-    //     };
-    //     return new Date(dateStr).toLocaleDateString(undefined, options);
-    // };
+    
     const formatTime = (timeStr) => {
         const options = {
           hour: '2-digit',

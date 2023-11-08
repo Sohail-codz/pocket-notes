@@ -1,5 +1,4 @@
 import React from 'react';
-// import { useState, useEffect } from 'react';
 import '../notesContent-pc/NotesContentPc.css'
 
 function NotesContentPc({note}){
