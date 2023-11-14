@@ -44,7 +44,7 @@ function SidebarPc({selected, setSelected}){
         return () => {
           document.removeEventListener('mousedown', handleDocumentClick);
         };
-      }, []);
+    }, []);
 
     return(
         <div className='sidebarContainer'>
@@ -66,11 +66,14 @@ function SidebarPc({selected, setSelected}){
             ))}
             </div>
             {showPopup &&(
-                <div className='popup-pc-container' ref={popupRef}>
+                <div className='popup-pc-container'>
+                <div className='popup-here' ref={popupRef}>
                 <PopupPc
                 gNamesHead={gNamesHead}
                 setGNamesHead={setGNamesHead}
-                onClose={handleClose}/>
+                onClose={handleClose}
+                />
+                </div>
             </div>)}
         </div>
     );

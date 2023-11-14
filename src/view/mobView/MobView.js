@@ -29,11 +29,23 @@ function MobView({selected, setSelected}){
     }, [gNamesHead]);
 
     const handleClick=()=> {
-        setShowPopup(true);
+        setShowPopup(!showPopup);
     }
     const handleClose=()=>{
         setShowPopup(false);
     }
+    const handleDocumentClick = (e) => {
+        if (popupRef.current && !popupRef.current.contains(e.target)) {
+          setShowPopup(false);
+        }
+      };
+    useEffect(() => {
+        document.addEventListener('mousedown', handleDocumentClick);
+        return () => {
+          document.removeEventListener('mousedown', handleDocumentClick);
+        };
+      }, []);
+
     return(
         
             <div className='home-mob-container'> 
@@ -55,15 +67,18 @@ function MobView({selected, setSelected}){
                 ))}
                 </div>
                 {showPopup &&(
-                <div className='popup-mob-container' ref={popupRef}>
-                    <PopupMob
-                    gNamesHead={gNamesHead}
-                    setGNamesHead={setGNamesHead}
-                    onClose={handleClose}/>
-                </div>
-                )}
+                    <div className='popup-mob-container'>
+                        <div className='popup-mob-here' ref={popupRef}>
+                        <PopupMob
+                        gNamesHead={gNamesHead}
+                        setGNamesHead={setGNamesHead}
+                        onClose={handleClose}/>
+                        </div>
+                    </div>
+                    )}
             </div>
     )
 }
 
 export default MobView;
+
