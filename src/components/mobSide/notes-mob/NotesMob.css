@@ -1,6 +1,7 @@
 .mob-notespage-container{
     height: 100vh;
     display: flex;
+    background-color: #e8e8e8;
     flex-flow: column;
     font-family: 'Roboto', sans-serif;
 }
@@ -24,6 +25,7 @@
     color: white;
     font-size: 20px;
     font-weight: 500;
+    overflow: hidden;
 }
 
 .mob-notespage-content-area{

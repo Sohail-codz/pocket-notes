@@ -26,6 +26,7 @@
     align-items: center;
     color: white;
     font-size: 4vh;
+    overflow: hidden;
 }
   
 .notes-title-text{
